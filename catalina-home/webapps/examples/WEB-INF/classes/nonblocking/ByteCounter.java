@@ -16,9 +16,6 @@
  */
 package nonblocking;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-
 import jakarta.servlet.AsyncContext;
 import jakarta.servlet.ReadListener;
 import jakarta.servlet.ServletException;
@@ -28,6 +25,9 @@ import jakarta.servlet.WriteListener;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 /**
  * This doesn't do anything particularly useful - it just counts the total

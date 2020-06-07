@@ -16,10 +16,10 @@
 */
 package examples;
 
-import java.io.IOException;
-
 import jakarta.servlet.jsp.JspException;
 import jakarta.servlet.jsp.JspTagException;
+
+import java.io.IOException;
 
 /**
  * Example1: the simplest tag

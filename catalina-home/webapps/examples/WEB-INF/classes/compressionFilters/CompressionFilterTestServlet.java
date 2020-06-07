@@ -16,14 +16,14 @@
 */
 package compressionFilters;
 
-import java.io.IOException;
-import java.util.Enumeration;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+import java.util.Enumeration;
 
 /**
  * Very Simple test servlet to test compression filter

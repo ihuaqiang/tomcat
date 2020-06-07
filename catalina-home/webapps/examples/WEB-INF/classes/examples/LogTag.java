@@ -16,10 +16,10 @@
 */
 package examples;
 
-import java.io.IOException;
-
 import jakarta.servlet.jsp.JspException;
 import jakarta.servlet.jsp.JspTagException;
+
+import java.io.IOException;
 
 /**
  * Log the contents of the body. Could be used to handle errors etc.

@@ -16,9 +16,9 @@
  */
 package cal;
 
-import java.util.Hashtable;
-
 import jakarta.servlet.http.HttpServletRequest;
+
+import java.util.Hashtable;
 
 public class TableBean {
 

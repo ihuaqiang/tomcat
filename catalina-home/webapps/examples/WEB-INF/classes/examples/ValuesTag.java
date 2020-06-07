@@ -16,12 +16,12 @@
  */
 package examples;
 
-import java.io.IOException;
-
 import jakarta.servlet.jsp.JspException;
 import jakarta.servlet.jsp.JspTagException;
 import jakarta.servlet.jsp.JspWriter;
 import jakarta.servlet.jsp.tagext.TagSupport;
+
+import java.io.IOException;
 
 /**
  * Accept and display a value.

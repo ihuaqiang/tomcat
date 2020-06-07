@@ -16,15 +16,14 @@
  */
 package websocket;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import jakarta.websocket.Endpoint;
 import jakarta.websocket.server.ServerApplicationConfig;
 import jakarta.websocket.server.ServerEndpointConfig;
-
 import websocket.drawboard.DrawboardEndpoint;
 import websocket.echo.EchoEndpoint;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class ExamplesConfig implements ServerApplicationConfig {
 

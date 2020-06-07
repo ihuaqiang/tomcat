@@ -16,18 +16,18 @@
  */
 package websocket.snake;
 
-import java.awt.Color;
-import java.io.EOFException;
-import java.util.Iterator;
-import java.util.Random;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import jakarta.websocket.OnClose;
 import jakarta.websocket.OnError;
 import jakarta.websocket.OnMessage;
 import jakarta.websocket.OnOpen;
 import jakarta.websocket.Session;
 import jakarta.websocket.server.ServerEndpoint;
+
+import java.awt.Color;
+import java.io.EOFException;
+import java.util.Iterator;
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @ServerEndpoint(value = "/websocket/snake")
 public class SnakeAnnotation {

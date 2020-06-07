@@ -16,20 +16,19 @@
  */
 package websocket.drawboard;
 
-import java.io.IOException;
-import java.util.LinkedList;
-
 import jakarta.websocket.CloseReason;
 import jakarta.websocket.CloseReason.CloseCodes;
 import jakarta.websocket.RemoteEndpoint.Async;
 import jakarta.websocket.SendHandler;
 import jakarta.websocket.SendResult;
 import jakarta.websocket.Session;
-
 import websocket.drawboard.wsmessages.AbstractWebsocketMessage;
 import websocket.drawboard.wsmessages.BinaryWebsocketMessage;
 import websocket.drawboard.wsmessages.CloseWebsocketMessage;
 import websocket.drawboard.wsmessages.StringWebsocketMessage;
+
+import java.io.IOException;
+import java.util.LinkedList;
 
 /**
  * Represents a client with methods to send messages asynchronously.

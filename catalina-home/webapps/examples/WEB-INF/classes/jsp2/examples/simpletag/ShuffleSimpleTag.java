@@ -18,12 +18,12 @@
 
 package jsp2.examples.simpletag;
 
-import java.io.IOException;
-import java.util.Random;
-
 import jakarta.servlet.jsp.JspException;
 import jakarta.servlet.jsp.tagext.JspFragment;
 import jakarta.servlet.jsp.tagext.SimpleTagSupport;
+
+import java.io.IOException;
+import java.util.Random;
 
 /**
  * SimpleTag handler that accepts takes three attributes of type

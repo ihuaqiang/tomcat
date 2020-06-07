@@ -16,11 +16,8 @@
  */
 package async;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.atomic.AtomicInteger;
-
+import async.Stockticker.Stock;
+import async.Stockticker.TickListener;
 import jakarta.servlet.AsyncContext;
 import jakarta.servlet.AsyncEvent;
 import jakarta.servlet.AsyncListener;
@@ -29,12 +26,13 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
 import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 
-import async.Stockticker.Stock;
-import async.Stockticker.TickListener;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class AsyncStockServlet extends HttpServlet implements TickListener, AsyncListener{
 

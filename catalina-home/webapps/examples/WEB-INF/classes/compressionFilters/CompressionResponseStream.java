@@ -16,13 +16,13 @@
 */
 package compressionFilters;
 
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.WriteListener;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.zip.GZIPOutputStream;
-
-import jakarta.servlet.ServletOutputStream;
-import jakarta.servlet.WriteListener;
 
 /**
  * Implementation of <b>ServletOutputStream</b> that works with

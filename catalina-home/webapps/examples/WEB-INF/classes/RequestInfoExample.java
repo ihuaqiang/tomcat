@@ -15,16 +15,15 @@
 * limitations under the License.
 */
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ResourceBundle;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
 import util.HTMLFilter;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ResourceBundle;
 
 /**
  * Example servlet showing request information.

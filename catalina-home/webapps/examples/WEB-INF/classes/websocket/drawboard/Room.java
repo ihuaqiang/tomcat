@@ -16,6 +16,10 @@
  */
 package websocket.drawboard;
 
+import websocket.drawboard.wsmessages.BinaryWebsocketMessage;
+import websocket.drawboard.wsmessages.StringWebsocketMessage;
+
+import javax.imageio.ImageIO;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -29,11 +33,6 @@ import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.locks.ReentrantLock;
-
-import javax.imageio.ImageIO;
-
-import websocket.drawboard.wsmessages.BinaryWebsocketMessage;
-import websocket.drawboard.wsmessages.StringWebsocketMessage;
 
 /**
  * A Room represents a drawboard where a number of
