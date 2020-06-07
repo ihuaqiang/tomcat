@@ -16,21 +16,18 @@
  */
 package org.apache.coyote.http2;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
+import org.apache.catalina.Context;
+import org.apache.catalina.startup.Tomcat;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.catalina.Context;
-import org.apache.catalina.startup.Tomcat;
+import java.io.IOException;
+import java.nio.ByteBuffer;
 
-import trailers.ResponseTrailers;
 
 
 public class TestStream extends Http2TestBase {
@@ -88,7 +85,7 @@ public class TestStream extends Http2TestBase {
         Context ctxt = tomcat.addContext("", null);
         Tomcat.addServlet(ctxt, "simple", new SimpleServlet());
         ctxt.addServletMappingDecoded("/simple", "simple");
-        Tomcat.addServlet(ctxt, "trailers", new ResponseTrailers());
+        //Tomcat.addServlet(ctxt, "trailers", new ResponseTrailers());
         ctxt.addServletMappingDecoded("/trailers", "trailers");
 
         tomcat.start();
