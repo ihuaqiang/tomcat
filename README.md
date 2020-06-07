@@ -79,7 +79,7 @@ instructions for reporting a bug
 Please see [CONTRIBUTING](CONTRIBUTING.md) for more info.
 
 
-VM-options 
+###VM-options 
 -Dcatalina.home=catalina-home
 -Dcatalina.base=catalina-home
 -Djava.endorsed.dirs=catalina-home/endorsed
